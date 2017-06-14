@@ -1,0 +1,27 @@
+<% 
+  Projects=[
+    {name: 'SomeThere', url: 'http://www.somethere.com', desc: 'Bootcamp capstone', photo: '/assets/somethere.png'},
+    {name: 'Elizabeth Hales Design', url: 'https://www.elizabethhalesdesign.com/', desc: 'Local interior designer shopify site', photo: '/assets/ehd.jpg'},
+    {name: "Huntin' Fool", url: 'https://www.HuntinFool.net', desc: 'Website for a local hunting company', photo: '/assets/hf.png'},
+    {name: 'Vivint Arena', url: 'https://www.VivintArena.com', desc: 'Sports arena for local NBA team and concert venue', photo: '/assets/vivint.png'}
+  ] 
+%>
+
+
+
+<div class='container'>
+  <h1>Projects: </h1>
+ <!--  <div class='row'> -->
+    <% Projects.each do |project| %>
+      <div class="card">
+      <img class="card-img-top card-img" src=<%= project[:photo]%> alt="Card image cap">
+        <div class="card-block">
+          <h4 class="card-title"><%= project[:name]%></h4>
+          <p class="card-text"><%= project[:desc]%></p>
+          <a href=<%= project[:url] %> class="btn btn-primary" target='_blank'>See project</a>
+        </div>
+      </div>
+    <% end %>
+  <!-- </div> -->
+</div>
+
