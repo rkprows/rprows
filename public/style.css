@@ -1,3 +1,5 @@
+/*#ECC8AF */
+
 /* GENERAL */
 body {
   font-family: "AvenirNext-Regular";
@@ -10,30 +12,60 @@ h1 {
 
 .navbar {
   background-color: #CE796B;
+  margin-bottom: 0;
+  border: none;
+  border-radius: 0px;
 }
 
 .navbar-default .navbar-nav>li>a {
   color: #ffffff;
+  letter-spacing: 3px;
+}
+
+.navbar-default .navbar-nav>li>a:hover {
+  color: #495867;
+}
+
+.navbar-default .navbar-brand {
+  color: #ffffff;
 }
 
 /* INDEX */
-
-.index {
-  text-align: center;
+.index-page {
+  background-image: url(./assets/background.png);
+  background-repeat: no-repeat;
+  margin-top: 0px;
+  height: 1200px;
+  overflow: hidden;
+}
+.index-header {
   background-color: #ECC8AF;
-  color: 
+  margin: 100px 275px;
+  padding: 25px;
+  text-align: center;
+  width: 60%;
+  /*height: 525px;*/
+
 }
 
-.title h1 {
-  letter-spacing: 15px;
+.intro h1 {
+  letter-spacing: 15px
 }
+
 
 .paragraph {
-  padding-left: 25px;
-  padding-right: 25px;
 
 }
 
+.photo img {
+  width: 150%;
+}
+
+.title h1{
+  /*letter-spacing: 15px;*/
+  font-size: 200px;
+  color: white;
+}
 /* ABOUT */
 
 /* PROJECTS */
