@@ -5,6 +5,11 @@ GEM
     sinatra (1.1.0)
       rack (~> 1.1)
       tilt (~> 1.1)
+    sinatra-bootstrap (0.6.1)
+      sinatra (>= 1.0)
+      sinatra-outputbuffer
+    sinatra-outputbuffer (0.1.0)
+      sinatra (>= 1.0.a)
     tilt (1.4.1)
 
 PLATFORMS
@@ -12,6 +17,7 @@ PLATFORMS
 
 DEPENDENCIES
   sinatra (= 1.1.0)
+  sinatra-bootstrap
 
 BUNDLED WITH
    1.15.1

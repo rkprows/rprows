@@ -10,14 +10,27 @@ h1 {
   color: #495867;
 }
 
+.center {
+  text-align: center;
+}
+.spaced {
+  letter-spacing: 10px;
+}
+/*NAVBAR*/
+
 .navbar {
   background-color: #CE796B;
   margin-bottom: 0;
   border: none;
   border-radius: 0px;
   position: -webkit-sticky;
-  position: sticky;
+  position: fixed;
   top: 0;
+  z-index: 100;
+}
+
+.navbar-default .navbar-brand {
+  color: #ffffff;
 }
 
 .navbar-default .navbar-nav>li>a {
@@ -29,11 +42,16 @@ h1 {
   color: #495867;
 }
 
-.navbar-default .navbar-brand {
-  color: #ffffff;
-}
 
 /* INDEX */
+.index-header {
+  background-color: rgba(236, 200, 175, 0.9);
+  margin: 100px auto;
+  padding: 25px;
+  text-align: center;
+  width: 60%;
+}
+
 .index-page {
   background-image: url(./assets/background.png);
   background-repeat: no-repeat;
@@ -45,36 +63,29 @@ h1 {
   overflow: auto;
 }
 
-
-.index-header {
-  background-color: #ECC8AF;
-  margin: 100px auto;
-  padding: 25px;
-  text-align: center;
-  width: 60%;
-  /*height: 525px;*/
-
-}
-
 .intro h1 {
   letter-spacing: 15px
+  color: black !important;
 }
 
-
-.paragraph {
-
-}
 
 .photo img {
   width: 150%;
 }
 
 .title h1{
-  /*letter-spacing: 15px;*/
   font-size: 200px;
   color: white;
 }
+
+
 /* ABOUT */
+
+`{
+  position:fixed;
+  bottom:0px;
+  left:50%;
+}
 
 /* PROJECTS */
 .card-img img {
@@ -85,4 +96,72 @@ h1 {
 /* RESUME */
 
 /* CONTACT */
+.contact {
+  background-image: url(./assets/background.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size:  cover;
+  height: 1500px;
+  overflow: auto;
+}
+
+.contact-form {
+  width: 62%;
+}
+
+.form-horizontal {
+  background-color: rgba(236, 200, 175, 0.9) !important ;
+  height: 500px;
+  padding: 25px;
+  margin: 100px auto;
+}
+
+
+/*RESPONSIVE STYLING */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+  /*index*/
+  .title h1 {
+    display: none;
+  }
+
+  .index-header {
+    width: 85%;
+    margin-top: 20px;
+  }
+
+  /*contact*/
+  .contact-form {
+    width: 100% ;
+  }
+  .form-horizontal {
+    margin-top: 20px;
+    height: 100%;
+  }
+}
+
+/*tablet*/
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+  /*Index*/
+  .index-header {
+    width: 85%;
+  }
+
+  /*contact*/
+  .contact-form {
+    width: 100%;
+  }
+
+  .form-horizontal {
+    margin-top: 25px;
+    height: 100%;
+  }
+
+}
 
