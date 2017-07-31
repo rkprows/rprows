@@ -16,6 +16,10 @@ h1 {
 .spaced {
   letter-spacing: 10px;
 }
+
+.small-only {
+  display: none;
+}
 /*NAVBAR*/
 
 .navbar {
@@ -44,8 +48,21 @@ h1 {
 
 
 /* INDEX */
+.about {
+  display: none;
+}
+
+#hide{
+  display: none;
+  font-size: 50px;
+}
+
+.down-caret {
+  font-size: 50px;
+}
+
 .index-header {
-  background-color: rgba(236, 200, 175, 0.9);
+  background-color: rgb(236, 200, 175);
   margin: 100px auto;
   padding: 25px;
   text-align: center;
@@ -60,7 +77,7 @@ h1 {
   background-size:  cover;
   margin-top: 0px;
   height: 1500px;
-  overflow: auto;
+  overflow: hidden;
 }
 
 .intro h1 {
@@ -75,13 +92,17 @@ h1 {
   color: white;
 }
 
+.photo {
+  height: 300px;
+}
+
 
 /* ABOUT */
-.about {
-  background-color: rgba(236, 200, 175, 0.9);
+/*.about {
+  background-color: rgb(236, 200, 175);
   float: right;
   margin: 100px 75px 75px 75px;
-}
+}*/
 
 .about-container {
   width: 100%;
@@ -101,15 +122,16 @@ h1 {
   margin: 25px;
 }
 
-.photo {
+.photo1 {
   float: left;
   position:fixed;
   bottom:0px;
-/*  overflow: hidden;*/
+  overflow: hidden;
 }
 
 
-/* PROJECTS */
+
+/* PROJECTS 
 
 .card {
   width: 360px;
@@ -123,20 +145,10 @@ h1 {
   min-height: 172px;
 }
 
-/*.card-text {
-  margin-left: 20px;
-}
-
-.card-title {
-  margin-top: 20px;
-  margin-left: 20px;
-}*/
-
 .project-btn {
   margin: 0px 0px 10px 0px;
 }
 .projects-page {
-  /*width: 1200px;*/
   background-image: url(./assets/background.png);
   background-repeat: no-repeat;
   background-position: center center;
@@ -163,6 +175,32 @@ h1 {
 }
 
 /* RESUME */
+.resume-page {
+  background-image: url(./assets/background.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size:  cover;
+  margin-top: 0px;
+  height: 1500px;
+  overflow: auto;
+}
+
+.resume-header {
+  margin: 100px auto;
+  background-color: rgb(236, 200, 175);
+  /*height: 200px;*/
+  padding-top: 30px;
+  width: 62%;
+}
+
+.resume-pdf {
+  width: 850px;
+  height: 1000px;
+  margin: 50px 240px;
+  /*margin-bottom: 50px;*/
+/*  margin-top: 50px;
+*/}
 
 /* CONTACT */
 .contact {
@@ -248,6 +286,12 @@ h1 {
 
   .bio {
     padding: 5px 5px 25px 5px;
+  }
+
+  /*resume*/
+
+  .small-only {
+    display: block;
   }
 
 }
